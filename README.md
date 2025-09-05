@@ -178,7 +178,7 @@ enroot start --rw --mount /mnt/home/${USER}/enroot/workspace:/app hpc-benchmarks
 # should see 8 hostnames for each node
 ```
 
-> **Note**: The command prefix before the container name (i.e., `enroot start --rw --mount /mnt/home/${USER}/enroot/workspace:/app`) must match exactly what is set in the `/etc/enroot/hooks.d/ompi.sh` hook. **Do not modify** this part of the command, or the multi-node launch will not work correctly. You can change everything after the container name (e.g., `mpirun ...`) though.
+> **Note**: The command prefix before the container name (i.e., `enroot start --rw --mount /mnt/home/${USER}/enroot/workspace:/app`) must match exactly what is set in the `/etc/enroot/hooks.d/ompi.sh` hook. **Do not modify** this part of the command, or the multi-node launch will not work correctly. You can change everything after the container name (e.g., `mpirun ...`) though. In addition, it is highly recommended to use absolute paths in the command.
 
 ## Running HPL
 
